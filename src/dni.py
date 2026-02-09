@@ -42,3 +42,9 @@ class Dni:
                 return False
             letra_esperada = self.letra_calculada()
             return letra_esperada == self.letra_asignacion
+
+        def __repr__(self) -> str:
+            return f"Dni('{self.dni_original}')"
+
+        def __str__(self) -> str:
+            return f"{self.numero_personal}-{self.letra_asignacion}"
