@@ -1,5 +1,4 @@
-class TablaAsignacion():
-
+class TablaAsignacion:
     def __init__(self):
         self.tabla = [
             "T",
@@ -26,3 +25,6 @@ class TablaAsignacion():
             "K",
             "E",
         ]
+
+    def getTabla(self):
+        return self.tabla
