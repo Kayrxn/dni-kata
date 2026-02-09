@@ -33,3 +33,12 @@ class Dni:
             if not self.es_numero_personal_valido():
                 return None
             return self.tabla_asignacion.calcularLetra(self.numero_personal)
+
+        def es_valido(self) -> bool:
+            """Valida el DNI por partes: número válido, letra permitida y coincide la letra calculada."""
+            if not self.es_numero_personal_valido():
+                return False
+            if not self.es_letra_valida():
+                return False
+            letra_esperada = self.letra_calculada()
+            return letra_esperada == self.letra_asignacion
