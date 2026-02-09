@@ -1,4 +1,4 @@
-from tabla_asignacion import TablaAsignacion
+from src.tabla_asignacion import TablaAsignacion
 
 
 class Dni:
