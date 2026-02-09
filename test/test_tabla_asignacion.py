@@ -1,7 +1,7 @@
 from test.dni_correctos import CASOS_TEST_CORRECTOS
 from test.dni_incorrectos import CASOS_TEST_LETRA_PROHIBIDA
 import pytest
-from src.tablaAsignacion import TablaAsignacion
+from src.tabla_asignacion import TablaAsignacion
 
 
 @pytest.fixture(name="tabla")
