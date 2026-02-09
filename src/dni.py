@@ -24,3 +24,12 @@ class Dni:
                 self.letra_asignacion.isalpha()
                 and self.tabla_asignacion.isLetraPermitida(self.letra_asignacion)
             )
+
+        def letra_calculada(self) -> str:
+            """Calcula la letra esperada a partir del número personal.
+
+            Devuelve la letra calculada (cadena) o None si el número no es válido.
+            """
+            if not self.es_numero_personal_valido():
+                return None
+            return self.tabla_asignacion.calcularLetra(self.numero_personal)
