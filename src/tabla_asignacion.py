@@ -40,3 +40,7 @@ class TablaAsignacion:
 
     def isLetraPermitida(self, letra):
         return letra in self.getTabla()
+
+    def calcularLetra(self, numero_dni):
+        posicion = int(numero_dni) % self.getModulo()
+        return self.getLetra(posicion)
