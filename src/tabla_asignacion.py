@@ -44,3 +44,6 @@ class TablaAsignacion:
     def calcularLetra(self, numero_dni):
         posicion = int(numero_dni) % self.getModulo()
         return self.getLetra(posicion)
+
+    def __repr__(self) -> str:
+        return " ".join(self.getTabla())
