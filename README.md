@@ -1,5 +1,8 @@
 # Verificación de DNI ✅
 
+Sara García Garrido - [@SaraGG96](https://github.com/SaraGG96)  
+Fernán Pérez Castro - [@FernanPC18](https://github.com/FernanPC18)
+
 **Resumen:**
 El ejercicio valida un DNI español comprobando el formato (8 dígitos + letra) y calculando la letra correcta a partir del número.  
 Si la letra calculada coincide con la letra dada, el DNI es válido.
